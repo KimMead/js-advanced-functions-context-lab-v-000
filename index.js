@@ -32,3 +32,21 @@ function createEmployeeRecord(employee) {
   }
   return employee
 }
+
+function createEmployeeRecords(array) {
+  return array.map(employee => createEmployeeRecord(employee))
+}
+
+function createTimeInEvent(date) {
+  let event = {
+    type: "TimeIn",
+    hour: parseInt(date.split(" ")[1], 10),
+    date: date.split(" ")[0]
+  }
+  this.timeInEvents.push(event)
+  return this
+}
+
+function hoursWorkedOnDate(date) {
+  let timeIn = this.timeInEvents.
+}
