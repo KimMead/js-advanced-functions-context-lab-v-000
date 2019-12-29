@@ -32,4 +32,3 @@ function createEmployeeRecord(employee) {
   }
   return employee
 }
-
